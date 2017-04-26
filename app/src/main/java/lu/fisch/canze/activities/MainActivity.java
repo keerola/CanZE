@@ -913,7 +913,7 @@ public class MainActivity extends AppCompatActivity implements FieldListener /*,
 
     public static boolean isSafe()
     {
-        boolean safe = !isDriving || !safeDrivingMode;
+        boolean safe = true; //!isDriving || !safeDrivingMode;
         if(!safe)
         {
             Toast.makeText(MainActivity.instance, R.string.toast_NotWhileDriving,Toast.LENGTH_LONG).show();
